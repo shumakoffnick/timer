@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getTime } from '../helpers/getTime'
 const Timer = () => {
     const [state, setState] = useState(false)
-    const [time, setTime] = useState(2 * 60)
+    const [time, setTime] = useState(25 * 60)
     const minutes = getTime(Math.floor(time / 60));
     const second = getTime(time - minutes * 60)
     useEffect(()=>{
