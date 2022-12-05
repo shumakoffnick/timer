@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getTime } from '../helpers/getTime'
-const Timer = () => {
+import { Link } from 'react-router-dom'
+const Timer = ({setnewState}) => {
     const [state, setState] = useState(false)
     const [time, setTime] = useState(25 * 60)
     const minutes = getTime(Math.floor(time / 60));
@@ -27,6 +28,9 @@ const Timer = () => {
   return (
     <>
     <div className={state ? "active" : "timer"}>
+        <Link className='linkBack' onClick={()=> setnewState(true)} to='/'>
+        <div>Back</div>
+        </Link>
         <div className='timeBlock'>
             <div className='theTime'>
             <span>{minutes}</span>

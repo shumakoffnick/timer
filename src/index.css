@@ -11,6 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#F78CA0, #F9748F, #FD868C, #FE9A8B);
+}
 .timer{
   width: 100vw;
   height: 100vh;
@@ -59,4 +64,49 @@ button{
   justify-content: center;
   margin-left: 500px;
   height: 200px;
+}
+.form{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#F78CA0, #F9748F, #FD868C, #FE9A8B);
+  display: flex;
+  justify-content: center;
+}
+.formBlock{
+  width: 585px;
+  height: 609px;
+  background: linear-gradient(#F78CA0, #F9748F, #FD868C, #FE9A8B);
+  border-radius: 30px;
+  border: 1px solid #FEAFAF;
+}
+input{
+  width: 528px;
+  height: 73px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  border: transparent;
+  margin-left: 20px;
+  font-size: 50px;
+  color: #FFF;
+}
+p{
+  margin-left: 20px;
+  color: #FFF;
+}
+.btnBlock{
+  float: right;
+  margin-top: 40px;
+  margin-right: 30px;
+  font-size: 20px;
+}
+.linkTimer{
+  text-decoration: none;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+}
+.linkBack{
+  text-decoration: none;  
+  color: #FFF;
 }
