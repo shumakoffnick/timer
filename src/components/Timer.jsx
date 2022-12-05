@@ -19,7 +19,7 @@ const Timer = () => {
     }
     const handleStop = ()=>{
         setState(!state);
-        setTime(2 * 60)
+        setTime(25 * 60)
     }
     const handlePause = ()=>{
         setState(!state)
